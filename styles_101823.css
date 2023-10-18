@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 150px;
+  }
+  
+  #container {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0 10px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url("assets/GOOD WHITE PAPER BASE.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+
+
+  
+  h1, h2, h3, a {
+    margin: 0;
+    color: #5f5f5f;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-size: clamp(0.6rem, 3vw, 0.9rem);
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: clamp(1rem, 4vw, 1.4rem);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding-bottom: 3%;
+  }
+  
+  h1 {
+    font-size: clamp(2.2rem, 9vw, 3.7rem);
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -0.03em;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h3 {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+    font-weight: 400;
+    margin-top: 2vh;
+    letter-spacing: 0.25em;
+    animation: Animation 2s ease 0s 1 normal forwards;
+  }
+  @keyframes Animation {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+  
+  img {
+    width: 60%;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+
+  .center {
+    margin: auto;
+    width: 50%;
+    height: 80vh;
+    padding-top: 10%;
+  }
+  
+  .left {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  
+  .spacer {
+    width: 5%;
+  }
+  
+  #btn-container {
+    max-width: 300px;
+    padding: 5px 0;
+    align-items: center;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+@media screen and (min-width: 1366px) {
+    #btn-container {
+        max-width: 300px;
+        padding: 5px 0;
+        align-items: center;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+      }
+    }
+  
+  .button {
+    background-color: #818285;
+    color: white;
+    padding: 12px 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: none;
+  }
+  @media screen and (min-width: 1366px) {
+    .button {
+        background-color: #818285;
+        color: white;
+        padding: 12px 35px;
+        margin-top: 10px;
+        border-radius: 8px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: none;
+      }
+    }
+    .button:active {
+        background-color: #ebb627;
+        color: #818285; }
+
+    .button:active {
+        background-color: #ebb627;
+        color: #818285; }
+    

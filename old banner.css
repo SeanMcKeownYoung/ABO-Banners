@@ -1,52 +1,29 @@
 body {
     margin: 0;
     overflow: hidden;
+    height: 150px;
   }
   
-  .flex-container {
-    display: flex;   
-    justify-content: space-between; 
-    align-items: stretch; 
-    flex-direction: column; 
-    flex-wrap: nowrap; 
+  #container {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
     align-content: center;
-    padding: 0px;
-    gap: 5px;
-    width: 100vw;
-    height: 100vw;
+    margin: 0;
+    padding: 0 10px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     background-image: url("assets/GOOD WHITE PAPER BASE.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
-
-  .flex-container > div{
-    padding: 0px;
-  }
-
-  .textBox { 
-    flex-grow:0;
-    align-self:center;
     text-align: center;
   }
-			
-  .buttonBox { 
-    flex-grow:0;
-    align-self:center;
-  }
-			
-  .logoBox { 
-    position: relative;
-    bottom: 0%;
-    width: 50%;
-    height: 30%;
-    background-image: url("assets/LogoPhone.png");
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: top 5px center;  
-    align-self:center;
-  }
-			
+
 
   
   h1, h2, h3, a {
@@ -56,12 +33,10 @@ body {
     text-transform: uppercase;
   }
   
-  h1 {
-    font-size: clamp(2rem, 15vw, 7rem);
+  p {
+    font-size: clamp(0.6rem, 3vw, 0.9rem);
+    margin: 0;
     font-weight: 600;
-    line-height: 1;
-    text-align: center;
-    letter-spacing: -0.03em;
   }
   
   h2 {
@@ -70,7 +45,19 @@ body {
     letter-spacing: 0.1em;
     padding-bottom: 3%;
   }
-
+  
+  h1 {
+    font-size: clamp(2.2rem, 9vw, 3.7rem);
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -0.03em;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
   h3 {
     font-size: clamp(0.9rem, 4vw, 1.2rem);
     font-weight: 400;
@@ -87,16 +74,6 @@ body {
 		opacity: 1;
 	}
 }
-
-p {
-    font-size: clamp(0.6rem, 3vw, 0.9rem);
-    margin: 0;
-    font-weight: 600;
-  }
-
-  a {
-    text-decoration: none;
-  }
   
   img {
     width: 50%;
@@ -104,21 +81,20 @@ p {
     margin-top: 20px;
   }
 
-  .logo {
-    width: 40%;
-    background-image: url("assets/LogoPhone.png");
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: top 5px center;  
-  }
-
   .center {
     margin: auto;
     width: 50%;
-    height: auto;
-    padding-top: 10px;
+    height: 80vh;
+    padding-top: 10%;
   }
   
+  .left {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
   
   .spacer {
     width: 5%;

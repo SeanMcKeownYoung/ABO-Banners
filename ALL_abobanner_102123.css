@@ -85,6 +85,7 @@ body {
     margin-right: 0;
   }
 
+  @media only screen and (min-width: 767px) {
   .button {
     width: 65vw;
     dbackground-color: var(--accent);
@@ -99,14 +100,14 @@ body {
     align-content: center;
     transition: 0.03s;
   }
-
 .button:hover {
     width: 100vw;
     font-weight: 700;
     transition: 0.3s;
-  }
+  }    
+}
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 766px) {
     .button {
         width: 55vw;
         dbackground-color: var(--accent);
@@ -124,5 +125,3 @@ body {
         align-content: center;
     }
     }
-
-

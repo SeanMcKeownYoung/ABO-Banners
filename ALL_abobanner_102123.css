@@ -88,7 +88,7 @@ body {
   @media only screen and (min-width: 767px) {
   .button {
     width: 65vw;
-    dbackground-color: var(--accent);
+    background-color: var(--accent);
     color: white;
     border: 2px solid var(--accent);
     border-radius: 17px;
@@ -110,8 +110,7 @@ body {
   @media only screen and (max-width: 766px) {
     .button {
         width: 55vw;
-        dbackground-color: var(--accent);
-        background-color: aqua;
+        background-color: var(--accent);
         color: white;
         border: 2px solid var(--accent);
         border-radius: 10px;

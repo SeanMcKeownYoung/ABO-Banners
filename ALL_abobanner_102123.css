@@ -124,4 +124,9 @@ body {
         align-items: center;
         align-content: center;
     }
+    ::selection {
+      width: 100vw;
+      font-weight: 700;
+      transition: 0.3s;
+    }
     }

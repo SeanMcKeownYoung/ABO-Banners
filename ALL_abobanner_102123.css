@@ -87,7 +87,7 @@ body {
 
   .button {
     width: 65vw;
-    background-color: var(--accent);
+    dbackground-color: var(--accent);
     color: white;
     border: 2px solid var(--accent);
     border-radius: 17px;

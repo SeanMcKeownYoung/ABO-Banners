@@ -123,11 +123,5 @@ body {
         align-content: center;
     }
     }
-  @media only screen and (max-width: 500px) {
-    .button:active {
-        width: 90vw;
-        font-weight: 700;
-}
-    }
 
-    document.addEventListener("touchstart", function() {}, true); 
+
